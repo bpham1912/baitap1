@@ -5,11 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Định dạng web</title>
+  
   <style type="text/css">
-    body { background: url('D:\love.jpg') fixed center center; }
+    body { background: url("https://images.pexels.com/photos/2055957/pexels-photo-2055957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") fixed center center; }
     </style>
+    <style>
+        table {
+          width:100%;
+        }
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+        table#t01 tr:nth-child(even) {
+          background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+         background-color: #fff;
+        }
+        table#t01 th {
+          background-color: black;
+          color: white;
+          border: 1px solid white;
+          border-collapse: collapse;
+        }
+        </style>
 </head>
-<body bgcolor="#A06D21" text="#FFFFFF">
+<body text="#fff">
+  <h2 style="text-align:center;font-weight: bold;font-style: oblique;font-size: 50px">Xem tất cả những thứ bên dưới</h2>
+  
+  <table id="t01" style="color:black">
+      <tr>
+        <th>background</th>
+        <th>Style</th> 
+        <th>body</th>
+      </tr>
+      <tr>
+        <td>
+          background-image: url("photographer.jpg"); /* The image used */ <br>
+          background-color: #cccccc; /* Used if the image is unavailable */<br>
+          height: 500px; /* You must set a specified height */<br>
+          background-position: center; /* Center the image */<br>
+          background-repeat: no-repeat; /* Do not repeat the image */<br>
+          background-size: cover; /* Resize the background image to cover the entire container */<br></td>
+        <td>không sử dụng text ="#ffffff", thay bằng style="color: #ffffff"</td>
+        <td>-không sử dụng bgcolor =""</td>
+      </tr>
+      <tr>
+        <td> xem link bên dưới
+          <a href="https://www.w3schools.com/css/css_background.asp">https://www.w3schools.com/css/css_background.asp</a> </td>
+        <td></td>
+        <td>link <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background">https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background</a></td>
+      </tr>
+    </table>
+  <p>
   <center><h1><font color="#FFCC00">Đất đỏ Trường Thành phi hảo hán ...</font></h1></center>
   <p>hello word</p>
 </body>
